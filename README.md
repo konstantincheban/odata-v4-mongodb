@@ -1,8 +1,8 @@
-# OData V4 Service modules - MongoDB Connector [![Build Status](https://travis-ci.org/WandererInVoids/odata-v4-mongodb.svg?branch=master)](https://travis-ci.org/WandererInVoids/odata-v4-mongodb)
+# OData V4 Service modules - MongoDB Connector [![Build Status](https://travis-ci.org/kostiantyncheban/odata-v4-mongodb.svg?branch=master)](https://travis-ci.org/kostiantyncheban/odata-v4-mongodb)
 
 Service OData v4 requests from a MongoDB data store.
-sample project that using mongodb, mongoose and express 
-https://github.com/WandererInVoids/odata-v4-mongodb-sample-express
+sample project that using mongodb, mongoose and express
+https://github.com/konstantincheban/odata-v4-mongodb-sample-express
 
 ## Synopsis
 The OData V4 MongoDB Connector provides functionality to convert the various types of OData segments
@@ -14,7 +14,7 @@ into MongoDB query objects, that you can execute over a MongoDB database.
 
 ## Usage as server - TypeScript
 ```javascript
-import { createFilter } from '@wandererin/odata-v4-mongodb'
+import { createFilter } from '@kostiantyncheban/odata-v4-mongodb'
 
 //example request:  GET /api/products?$filter=category/id eq 5 or color eq 'Red'
 app.get("/api/products", (req: Request, res: Response) => {
@@ -40,7 +40,7 @@ let val = encodeURIComponent(string) // before
 
 ## Usage ES5
 ```javascript
-var createFilter = require('@wandererin/odata-v4-mongodb').createFilter;
+var createFilter = require('@kostiantyncheban/odata-v4-mongodb').createFilter;
 
 app.get("/api/products", function(req, res) {
     var filter = createFilter(req.query.$filter);

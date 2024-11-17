@@ -1,5 +1,5 @@
 {
-  "name": "@wandererin/odata-v4-mongodb",
+  "name": "@kostiantyncheban/odata-v4-mongodb",
   "version": "0.1.15",
   "description": "Service OData requests from a MongoDB data store",
   "main": "lib/index.js",
@@ -19,7 +19,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/WandererInVoids/odata-v4-mongodb.git"
+    "url": "git+https://github.com/konstantincheban/odata-v4-mongodb.git"
   },
   "keywords": [
     "OData",
@@ -28,20 +28,20 @@
     "parser",
     "mongoDB"
   ],
-  "author": "JayStack, WandererInVoids",
+  "author": "JayStack, WandererInVoids, Kostiantyn Cheban",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/WandererInVoids/odata-v4-mongodb/issues"
+    "url": "https://github.com/konstantincheban/odata-v4-mongodb/issues"
   },
-  "homepage": "https://github.com/WandererInVoids/odata-v4-mongodb#readme",
+  "homepage": "https://github.com/konstantincheban/odata-v4-mongodb#readme",
   "dependencies": {
+    "@odata/parser": "^0.2.1",
     "escape-string-regexp": "^4.0.0",
-    "odata-v4-literal": "^0.1.1",
-    "@odata/parser": "^0.2.1"
+    "odata-v4-literal": "^0.1.1"
   },
   "devDependencies": {
     "chai": "^4.2.0",
-    "mocha": "^8.1.3",
+    "mocha": "^10.8.2",
     "mocha-junit-reporter": "^2.0.0",
     "typescript": "^4.0.2"
   }
